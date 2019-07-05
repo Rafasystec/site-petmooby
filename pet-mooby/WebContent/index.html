@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://kit.fontawesome.com/9ecbd771a2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/lib/angular-translate.min.js"></script>  
+    <script src="./js/lib/angular-translate-loader-static-files.min.js"></script>  
+
+<!--
+    <script type="application/json" src="./js/language/locale_en.json"></script>
+    <script type="application/json" src="./js/language/locale_pt.json"></script>
+-->
+
+    <script src="./js/controller/index-controller.js"></script>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>BOORA APP</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/new-age.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+<div ng-app="boora" ng-controller="IndexController">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">BOORA
+        </a>
+        
+        <div class = "d-md-none">  
+       <img data-ng-click="changeLanguage('pt')" src="img/brazil.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt="">
+           <img data-ng-click="changeLanguage('en')" src="img/usa.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt="">
+           <img data-ng-click="changeLanguage('es')" src="img/spain.png" style="cursor:pointer;height:30px;width: 30px;"  class="img-fluid" alt="">
+      </div> 
+        
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">{{'MENU_TOP_DOWNLOAD' | translate}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">{{'MENU_TOP_FEATURES' | translate}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">{{'MENU_TOP_CONTACT' | translate}}</a>
+          </li>
+        </ul>
+      </div>
+        
+        
+      
+        
+     <div class = "d-none d-md-inline">  
+       <img src="img/brazil.png" data-ng-click="changeLanguage('pt')" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt="">
+           <img  data-ng-click="changeLanguage('en')" src="img/usa.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt="">
+           <img  data-ng-click="changeLanguage('es')" src="img/spain.png" style="cursor:pointer;height:30px;width: 30px;"  class="img-fluid" alt="">
+      </div>      
+
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5">{{'MAIN_TITLE' | translate}}</h1>
+            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">{{'MAIN_BUTTON' | translate}}</a> 
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="img/demo-screen-2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="download bg-primary text-center" id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="section-heading">{{'DOWNLOAD_TITLE' | translate}}</h2>
+          <p>{{'DOWNLOAD_SUBTITLE' | translate}}</p>
+          <div class="badges">
+            <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.wanderpaths.app"><img src="img/google-play-badge.svg" alt=""></a>
+            <a class="badge-link" href="https://itunes.apple.com/br/app/wanderpaths/id1147166365?mt=8"><img src="img/app-store-badge.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>{{'FEATURE_TITLE' | translate}}</h2>
+        <p class="text-muted">{{'FEATURE_SUBTITLE' | translate}}</p>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 my-auto">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-map-signs  text-primary"></i>
+                  <h3>{{'FEATURE_TITLE1' | translate}}</h3>
+                  <p class="text-muted">{{'FEATURE_SUBTITLE1' | translate}}</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-dollar-sign text-primary"></i>
+                  <h3>{{'FEATURE_TITLE2' | translate}}</h3>
+                  <p class="text-muted">{{'FEATURE_SUBTITLE2' | translate}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="far fa-calendar-check text-primary"></i>
+                  <h3>{{'FEATURE_TITLE3' | translate}}</h3>
+                  <p class="text-muted">{{'FEATURE_SUBTITLE3' | translate}}</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-child text-primary"></i>
+                  <h3>{{'FEATURE_TITLE4' | translate}}</h3>
+                  <p class="text-muted">{{'FEATURE_SUBTITLE4' | translate}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-content">
+      <div class="container">
+          <div class="row">
+        <h2 class ="col-12 col-md-4" style="font-size: 60px;">{{'DRIVER_TITLE' | translate}}</h2>
+<!--        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">{{'DRIVER_BUTTON' | translate}}</a> -->
+<form class = "col-12 col-md-8">
+
+  <div class="form-row">
+    <div class="form-group col-12 col-md-8">
+      <label for="inputName">{{'NAME_LBL' | translate}}</label>
+      <input type="text" ng-model="name" class="form-control " id="inputName" placeholder="{{'NAME_LBL' | translate}}" oninvalid="this.setCustomValidity('Enter Name')"
+ oninput="setCustomValidity('')" required>
+    </div>  
+    
+    <div class="form-group col-12 col-md-4">
+      <label for="inputTelephone">{{'PHONE_LBL' | translate}}</label>
+      <input type="text" class="form-control" ng-model="telefone" id="inputTelephone" placeholder="{{'PHONE_LBL' | translate}}"
+             oninvalid="this.setCustomValidity('Enter Phone')"
+ oninput="setCustomValidity('')" required>
+    </div>
+  </div>
+    <div class="form-row">
+        <div class="form-group col-12">
+      <label for="inputEmail">E-Mail</label>
+      <input type="email" class="form-control" ng-model="email" id="inputEmail" placeholder="E-Mail" 
+             oninvalid="this.setCustomValidity('Enter E-Mail')"
+ oninput="setCustomValidity('')" required>
+    </div>
+            </div>
+            
+  <div class="form-group">
+    <label for="inputMessage">{{'MESSAGE_LBL' | translate}}</label>
+    <textarea class="form-control" id="inputMessage"  ng-model="message"  rows="5" oninvalid="this.setCustomValidity('Enter Message')"
+ oninput="setCustomValidity('')" required></textarea>
+  </div>
+  <button type="submit"  data-ng-click="sendForm()" class="btn btn-primary">{{'SEND_BTN' | translate}}</button>
+</form>  
+              </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </section>
+
+<!--
+  <section class="contact bg-primary" id="contact">
+    <div class="container">
+      <h2>We
+        <i class="fas fa-heart"></i>
+        new friends!</h2>
+        
+      <ul class="list-inline list-social">
+        <li class="list-inline-item social-twitter">
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-facebook">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-google-plus">
+          <a href="#">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+-->
+
+  <footer>
+    <div class="container">
+        
+        <div class="row">
+            <div class= "offset-md-1 col-md-4">
+<!--                <div class="row p-1 font-weight-bold">CANAIS DE ATENDIMENTO</div>-->
+                <div class="row p-1">contact.boora@gmail.com</div>
+                <div class="row p-1">+55 85 982082248</div>
+            </div>    
+            
+           <div class= "offset-md-4 col-md-2">
+<!--               <div class="row p-1 font-weight-bold">REDES SOCIAIS</div>-->
+               <div class="row p-1" data-ng-click="redirect('http://www.facebook.com')"><img  src="img/facebook.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt=""><a class="pl-1" style="cursor:pointer;">FACEBOOK</a></div>
+               <div class="row p-1"><img data-ng-click="redirect('http://www.instagram.com.br')" src="img/instagram.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt=""><a style="cursor:pointer;" class="pl-1">INSTAGRAM</a></div>
+               <div class="row p-1"><img data-ng-click="redirect('https://api.whatsapp.com/send?1=pt_BR&phone=5585982082248')" src="img/whatsapp.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt=""><a style="cursor:pointer;" class="pl-1">WHATSAPP</a></div>
+               
+              
+            </div>
+                        
+        </div>
+        <p>&copy; BOORA 2019. All Rights Reserved.</p>
+<!--
+         <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#">Terms</a>
+        </li>
+        
+      </ul>
+-->
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/new-age.min.js"></script>
+    </div>
+</body>
+
+</html>
