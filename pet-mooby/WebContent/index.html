@@ -20,7 +20,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>BOORA APP</title>
+  <title>PETMOOBY</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -46,13 +46,13 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">BOORA
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-family: 'MarkerFelt-Thin';
+font-weight: bold;">PETMOOBY
         </a>
         
         <div class = "d-md-none">  
        <img data-ng-click="changeLanguage('pt')" src="img/brazil.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt="">
            <img data-ng-click="changeLanguage('en')" src="img/usa.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt="">
-           <img data-ng-click="changeLanguage('es')" src="img/spain.png" style="cursor:pointer;height:30px;width: 30px;"  class="img-fluid" alt="">
       </div> 
         
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,9 +67,16 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#features">{{'MENU_TOP_FEATURES' | translate}}</a>
           </li>
+<!--
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">{{'MENU_TOP_CONTACT' | translate}}</a>
           </li>
+-->
+            
+          <li class="nav-item">
+            <a style="cursor:pointer;" class="nav-link js-scroll-trigger" data-ng-click="redirect('./pages/terms.html')">{{'MENU_TOP_TERMS' | translate}}</a>
+          </li>
+
         </ul>
       </div>
         
@@ -79,7 +86,6 @@
      <div class = "d-none d-md-inline">  
        <img src="img/brazil.png" data-ng-click="changeLanguage('pt')" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt="">
            <img  data-ng-click="changeLanguage('en')" src="img/usa.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt="">
-           <img  data-ng-click="changeLanguage('es')" src="img/spain.png" style="cursor:pointer;height:30px;width: 30px;"  class="img-fluid" alt="">
       </div>      
 
     </div>
@@ -117,11 +123,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h2 class="section-heading">{{'DOWNLOAD_TITLE' | translate}}</h2>
-          <p>{{'DOWNLOAD_SUBTITLE' | translate}}</p>
+          <h2 class="section-heading" style="COLOR: WHITE;font-weight: lighter;">{{'DOWNLOAD_TITLE' | translate}}</h2>
+          <p style="COLOR: WHITE">{{'DOWNLOAD_SUBTITLE' | translate}}</p>
           <div class="badges">
-            <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.wanderpaths.app"><img src="img/google-play-badge.svg" alt=""></a>
-            <a class="badge-link" href="https://itunes.apple.com/br/app/wanderpaths/id1147166365?mt=8"><img src="img/app-store-badge.svg" alt=""></a>
+<!--            <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.wanderpaths.app"><img src="img/google-play-badge.svg" alt=""></a>-->
+            <a class="badge-link" href="https://itunes.apple.com/br/app/wanderpaths/id11471663265?mt=8"><img src="img/app-store-badge.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -156,14 +162,14 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <i class="fas fa-map-signs  text-primary"></i>
+                  <i class="far fa-calendar-check  text-primary"></i>
                   <h3>{{'FEATURE_TITLE1' | translate}}</h3>
                   <p class="text-muted">{{'FEATURE_SUBTITLE1' | translate}}</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <i class="fas fa-dollar-sign text-primary"></i>
+                  <i class="fas fa-syringe text-primary"></i>
                   <h3>{{'FEATURE_TITLE2' | translate}}</h3>
                   <p class="text-muted">{{'FEATURE_SUBTITLE2' | translate}}</p>
                 </div>
@@ -172,14 +178,14 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <i class="far fa-calendar-check text-primary"></i>
+                  <i class="fas fa-pills text-primary"></i>
                   <h3>{{'FEATURE_TITLE3' | translate}}</h3>
                   <p class="text-muted">{{'FEATURE_SUBTITLE3' | translate}}</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <i class="fas fa-child text-primary"></i>
+                  <i class="fas fa-user-md text-primary"></i>
                   <h3>{{'FEATURE_TITLE4' | translate}}</h3>
                   <p class="text-muted">{{'FEATURE_SUBTITLE4' | translate}}</p>
                 </div>
@@ -191,12 +197,13 @@
     </div>
   </section>
 
+<!--
   <section class="cta">
     <div class="cta-content">
       <div class="container">
           <div class="row">
         <h2 class ="col-12 col-md-4" style="font-size: 60px;">{{'DRIVER_TITLE' | translate}}</h2>
-<!--        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">{{'DRIVER_BUTTON' | translate}}</a> -->
+        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">{{'DRIVER_BUTTON' | translate}}</a> 
 <form class = "col-12 col-md-8">
 
   <div class="form-row">
@@ -234,6 +241,7 @@
     </div>
     <div class="overlay"></div>
   </section>
+-->
 
 <!--
   <section class="contact bg-primary" id="contact">
@@ -267,23 +275,25 @@
     <div class="container">
         
         <div class="row">
-            <div class= "offset-md-1 col-md-4">
-<!--                <div class="row p-1 font-weight-bold">CANAIS DE ATENDIMENTO</div>-->
-                <div class="row p-1">contact.boora@gmail.com</div>
-                <div class="row p-1">+55 85 982082248</div>
+            <div class= " col-md-4">
+                <div class="row p-1 pl-3 font-weight-bold">{{'CONTACT_TITLE' | translate}}</div>
+                <div class="row p-1 pl-3">contact.petmooby@gmail.com</div>
+                <div class="row p-1 pl-3">+55 85 987698064</div>
             </div>    
             
+<!--
            <div class= "offset-md-4 col-md-2">
-<!--               <div class="row p-1 font-weight-bold">REDES SOCIAIS</div>-->
+               <div class="row p-1 font-weight-bold">REDES SOCIAIS</div>
                <div class="row p-1" data-ng-click="redirect('http://www.facebook.com')"><img  src="img/facebook.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt=""><a class="pl-1" style="cursor:pointer;">FACEBOOK</a></div>
                <div class="row p-1"><img data-ng-click="redirect('http://www.instagram.com.br')" src="img/instagram.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt=""><a style="cursor:pointer;" class="pl-1">INSTAGRAM</a></div>
                <div class="row p-1"><img data-ng-click="redirect('https://api.whatsapp.com/send?1=pt_BR&phone=5585982082248')" src="img/whatsapp.png" style="cursor:pointer;height: 30px;width: 30px;" class="img-fluid" alt=""><a style="cursor:pointer;" class="pl-1">WHATSAPP</a></div>
                
               
             </div>
+-->
                         
         </div>
-        <p>&copy; BOORA 2019. All Rights Reserved.</p>
+        <p class="pt-1">&copy; PETMOOBY 2019. All Rights Reserved.</p>
 <!--
          <ul class="list-inline">
         <li class="list-inline-item">
