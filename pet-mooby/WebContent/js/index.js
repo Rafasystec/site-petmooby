@@ -15,6 +15,9 @@ let app = angular.module('boora', ['pascalprecht.translate']);
 app.config(function ($translateProvider) {
   
  var en_var =  {
+     IMG_APP_ALT:'IMAGE FROM APP PETMOOBY',
+     DESCRIPTION_SITE_META: 'PETMOOBY is an application to help tutors take good care of their animals health.',
+     TITLE:'PETMOOBY - THE BEST APP FOR YOUR PETS',
     MENU_TOP_DOWNLOAD: 'DOWNLOAD',
     MENU_TOP_FEATURES: 'APP',
     MENU_TOP_TERMS:'TERMS',
@@ -47,6 +50,9 @@ app.config(function ($translateProvider) {
   };
     
     var pt_var =  {
+    IMG_APP_ALT:'IMAGEM DA TELA DO PETMOOBY',
+        DESCRIPTION_SITE_META : 'PETMOOBY é um aplicativo para ajudar os tutores a cuidar bem das saúde dos seus animais.',
+    TITLE:'PETMOOBY - O MELHOR APP PARA SEUS PETS',    
     MENU_TOP_DOWNLOAD: 'DOWNLOAD',
     MENU_TOP_FEATURES: 'APP',
     MENU_TOP_TERMS:'TERMOS',
@@ -79,6 +85,7 @@ app.config(function ($translateProvider) {
   };
     
     var es_var =  {
+    TITLE:'PETMOOBY - LA MEJOR APLICACIÓN PARA TUS ANIMALES', 
     MENU_TOP_DOWNLOAD: 'DOWNLOAD',
     MENU_TOP_FEATURES: 'APP',
     MENU_TOP_CONTACT: 'CONTACTO',
