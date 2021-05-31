@@ -8,4 +8,3 @@ whitenoise==5.2.0
 asgiref==3.3.4
 django-angular==2.3
 optional-django==0.1.0
-pkg-resources==0.0.0
