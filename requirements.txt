@@ -9,3 +9,4 @@ asgiref==3.3.4
 django-angular==2.3
 optional-django==0.1.0
 npm==0.1.1
+django-cors-headers==3.7.0
